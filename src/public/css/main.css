@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%; /* ให้ html และ body สูงเต็มจอภาพไว้ก่อน */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*font-family: 'Spicy Rice', cursive;*/
+  background: #005c97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  margin-bottom: 0 auto;
+  display: block;
+  min-height: 100%; /* real browsers */
+  height: auto !important; /* real browsers */
+  height: 100%; /* IE6 bug */
+  margin-bottom: -20px; /* กำหนด margin-bottom ให้ติดลบเท่ากับความสูงของ footer */
+}
+.navbar {
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.login-form h1 {
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+}
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #535b63;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer {
+  background: lightblue;
+  padding-top: 5px;
+  height: 30px; /* ความสูงของ footer */
+  display: block;
+  text-align: center;
+}
+footer .h3 {
+  font-size: small;
+}
